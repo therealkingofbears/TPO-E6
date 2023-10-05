@@ -1,0 +1,41 @@
+.logo { grid-area: logo;}
+.navbar { grid-area: navbar;}
+.container { grid-area: container;}
+.sidebar { grid-area: sidebar;}
+.home { grid-area: home;}
+.conocer { grid-area: conocer;}
+.recetas { grid-area: recetas;}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+    'logo logo logo logo'
+    'navbar navbar navbar navbar'
+    'container container container sidebar'
+    'container container container sidebar'
+    'container container container sidebar'
+    'container container container sidebar'
+    'container container container sidebar'
+    ;
+    background-color: cadetblue;
+    gap: 3vw;
+}
+
+.grid-container > div, nav {
+    background-color: aquamarine;
+    padding: 40px;
+}
+
+.navbar-menu {
+    display: grid;
+    grid-template-areas:
+    'home home conocer recetas'
+    ;
+    background-color:blueviolet;
+    gap: 3vw;
+}
+
+.navbar-menu > div {
+    background-color: rgb(247, 13, 227);
+    padding: 40px;
+}
