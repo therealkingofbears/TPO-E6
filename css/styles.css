@@ -1,3 +1,65 @@
+.logo { grid-area: logo;}
+.navbar { grid-area: navbar;}
+.alcohol { grid-area: alcohol;}
+.clasicos { grid-area: clasicos;}
+.sidebar { grid-area: sidebar;}
+.home { grid-area: home;}
+.conocer { grid-area: conocer;}
+.recetas { grid-area: recetas;}
+.receta1 { grid-area: receta1;}
+.receta2 { grid-area: receta2;}
+.receta3 { grid-area: receta3;}
+.receta4 { grid-area: receta4;}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+    'logo logo logo logo'
+    'navbar navbar navbar navbar'
+    'alcohol alcohol alcohol sidebar'
+    'clasicos clasicos clasicos sidebar'
+    ;
+    background-color: cadetblue;
+    gap: 3vw;
+}
+
+.grid-container > div, nav {
+    background-color: aquamarine;
+    padding: 40px;
+}
+
+.alcohol {
+    display:grid;
+    grid-template-areas: 
+    'receta1 receta2'
+    'receta3 receta4'
+    ;
+    background-color: cadetblue;
+    gap: 3vw;
+}
+
+.alcohol > div {
+    background-color: cadetblue;
+    padding: 40px;
+}
+
+.navbar-menu {
+    display: grid;
+    grid-template-areas:
+    'home home conocer recetas'
+    ;
+    background-color:blueviolet;
+    gap: 3vw;
+}
+
+.navbar-menu > div {
+    background-color: rgb(247, 13, 227);
+    padding: 40px;
+}
+
+img {
+    width: 10vw;
+}
 /*
 Selector de id
 */
