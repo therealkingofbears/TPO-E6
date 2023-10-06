@@ -70,16 +70,19 @@ Selector de id
 
 /*
 Selector de clase
-*/
+
 
 .section {
     background-color: #3d3c3c;
 }
 
+*/
+
 /*
 Selector universal (toda la página)
-*/
 
 * {
     background-color: #3d3c3c;
 }
+
+*/
