@@ -10,6 +10,7 @@
 .receta2 { grid-area: receta2;}
 .receta3 { grid-area: receta3;}
 .receta4 { grid-area: receta4;}
+.section { grid-area: section;}
 
 .grid-container {
     display: grid;
@@ -59,6 +60,27 @@
 
 img {
     width: 10vw;
+}
+
+.grid-cont {
+    display: grid;
+    grid-template-areas:
+    'logo logo logo logo'
+    'navbar navbar navbar navbar'
+    'section section section section'
+    'footer footer footer footer'
+    ;
+    background-color: #f3e7e7;
+    gap: 3vw;
+}
+
+.grid-cont > div, nav {
+    background-color: #f3e7e7;
+    padding: 40px;
+}
+
+footer {
+    background-color: #f3e7e7;
 }
 /*
 Selector de id

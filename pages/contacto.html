@@ -12,10 +12,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Caprasimo&display=swap" rel="stylesheet" />
 
     <!-- La hoja de estilos que se va a usar (la más relevante) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstra
+    p.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83
+    DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    
     <link rel="stylesheet" href="../css/styles.css" />
 </head>
 <body>
-    <div class="grid-container">
+    <div class="grid-cont">
         <div class="logo"> logo</div>
         <div class="navbar">
             <div class="navbar-menu">
@@ -53,14 +57,17 @@
                         <label for="Nombre">Nombre y Apellido</label>
                         <input type="text" class="input input-text" name="nombre" required placeholder="Tu nombre y apellido van acá" />
                     </div>
+                    <br>
                     <div class="form-group">
                         <label for="Mail">Email</label>
-                        <input type="mail" class="input" name="mail" required placeholder="juanperez@diego.com" />
+                        <input type="mail" class="input" name="mail" required placeholder="juanperez@xxx.com" />
                     </div>
+                    <br>
                     <div class="form-group">
                         <label for="Telefono">Teléfono</label>
                         <input type="number" class="input" name="telefono" required placeholder="1234567890" />
                     </div>
+                    <br>
                     <div class="form-group">
                         <label for="genero">Género</label>
                         <select name="genero" id="genero" class="input">
@@ -69,19 +76,23 @@
                             <option value="o">Otro</option>
                         </select>
                     </div>
+                    <br>
                     <div class="form-group">
                         <label for="Imagen">Imagen de Perfil</label>
                         <input type="file" class="input" name="imagen" />
                     </div>
+                    <br>
                     <div class="form-group">
                         <label for="fecha">Fecha de Nacimiento</label>
                         <input type="date" name="fecha-nac" min="1900-01-01" max="2029-12-31" />
                     </div>
+                    <br>
                     <div class="form-group">
                         <label for="contrasena" class="contrasena">Contraseña</label>
                         <input type="password" class="input" name="contrasena" pattern=",{8,}"
                             placeholder="Ingrese al menos 8 dígitos" />
                     </div>
+                    <br>
     
                     <button type="submit" class="link btn">Registrarme</button>
                     <button type="reset">Borrar Formulario</button>
