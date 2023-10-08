@@ -3,7 +3,7 @@
 .logo { grid-area: logo;}
 .navbar { grid-area: navbar;}
 .alcohol { grid-area: alcohol;}
-.clasicos { grid-area: clasicos;}
+.clasicas { grid-area: clasicos;}
 .sidebar { grid-area: sidebar;}
 .home { grid-area: home;}
 .conocer { grid-area: conocer;}
@@ -13,6 +13,7 @@
 .receta3 { grid-area: receta3;}
 .receta4 { grid-area: receta4;}
 .section { grid-area: section;}
+footer { grid-area: footer;}
 
 .grid-container {
     display: grid;
@@ -21,6 +22,7 @@
     'navbar navbar navbar navbar'
     'alcohol alcohol alcohol sidebar'
     'clasicos clasicos clasicos sidebar'
+    'footer footer footer footer'
     ;
     background-color: cadetblue;
     gap: 3vw;
@@ -42,6 +44,21 @@
 }
 
 .alcohol > div {
+    background-color: cadetblue;
+    padding: 40px;
+}
+
+.clasicas {
+    display:grid;
+    grid-template-areas: 
+    'receta1 receta2'
+    'receta3 receta4'
+    ;
+    background-color: cadetblue;
+    gap: 3vw;
+}
+
+.clasicas > div {
     background-color: cadetblue;
     padding: 40px;
 }
