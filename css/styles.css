@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Montserrat:wght@200&family=Poppins&display=swap');
+
 .logo { grid-area: logo;}
 .navbar { grid-area: navbar;}
 .alcohol { grid-area: alcohol;}
@@ -10,6 +12,7 @@
 .receta2 { grid-area: receta2;}
 .receta3 { grid-area: receta3;}
 .receta4 { grid-area: receta4;}
+.section { grid-area: section;}
 
 .grid-container {
     display: grid;
@@ -60,3 +63,71 @@
 img {
     width: 10vw;
 }
+
+.grid-cont {
+    display: grid;
+    grid-template-areas:
+    'logo logo logo logo'
+    'navbar navbar navbar navbar'
+    'section section section section'
+    'footer footer footer footer'
+    ;
+    background-color: #f3e7e7;
+    gap: 3vw;
+}
+
+.grid-cont > div, nav {
+    background-color: #f3e7e7;
+    padding: 40px;
+}
+
+footer {
+    background-color: #f3e7e7;
+}
+
+#form-registro{
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    align-items: center;
+    background: #e2e2e2;
+    padding: 35px;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.form-group{
+    padding: 10px 15px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/*
+Selector de id
+
+
+#formulario {
+
+}
+*/
+
+/*
+Selector de clase
+
+
+.section {
+    background-color: #3d3c3c;
+}
+
+*/
+
+/*
+Selector universal (toda la página)
+
+* {
+    background-color: #3d3c3c;
+}
+
+*/
