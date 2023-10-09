@@ -13,7 +13,23 @@
 .receta3 { grid-area: receta3; background-color: #c0c0db;}
 .receta4 { grid-area: receta4; background-color: #c0c0db;}
 .section { grid-area: section;}
+/* .recetas { grid-area: recetas;} */
+.nombre { grid-area: nombre; color:#050524}
+.recetas-img { grid-area: recetas-img;}
+.detalles { grid-area: detalles;}
 footer { grid-area: footer;}
+
+.recetas {
+    display: grid;
+    grid-template-areas:
+    'nombre'
+    'recetas-img'
+    'detalles'
+    ;
+    place-items: center;
+    /* background-color: cadetblue; */
+    gap: 1vw;
+}
 
 .grid-container {
     display: grid;
@@ -83,7 +99,7 @@ footer { grid-area: footer;}
 }
 
 img {
-    width: 10vw;
+    width: 15vw;
 }
 
 .logo-img {
@@ -125,6 +141,32 @@ footer {
 
 .form-group{
     padding: 10px 15px;
+}
+a:link,a:visited,a:hover,a:active {
+    text-decoration: none;
+}
+.special-link:hover,.special-link:active{
+    background-color: #050524;
+    color: #c0c0db;
+    padding: 14px 25px;
+    text-align: center;
+    display: inline-block;
+}
+
+.special-link:link {
+    background-color: #050524;
+    color: #c0c0db;
+    padding: 14px 25px;
+    text-align: center;
+    display: inline-block;
+}
+
+.special-link:visited {
+    background-color: #050524;
+    color: #c0c0db;
+    padding: 14px 25px;
+    text-align: center;
+    display: inline-block;
 }
 
 body {
