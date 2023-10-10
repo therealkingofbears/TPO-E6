@@ -7,6 +7,7 @@
 .sidebar { grid-area: sidebar; background-color: #c0c0db;}
 .home { grid-area: home;}
 .conocer { grid-area: conocer;}
+.contacto { grid-area: contacto;}
 .recetas { grid-area: recetas; }
 .receta1 { grid-area: receta1; background-color: #c0c0db;}
 .receta2 { grid-area: receta2; background-color: #c0c0db;}
@@ -86,7 +87,7 @@ footer { grid-area: footer;}
 .navbar-menu {
     display: grid;
     grid-template-areas:
-    'home home conocer recetas'
+    'home contacto conocer recetas'
     ;
     /* background-color:blueviolet; */
     gap: 1vw;
