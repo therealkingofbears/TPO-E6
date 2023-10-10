@@ -1,18 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Montserrat:wght@200&family=Poppins&display=swap');
 
-.logo { grid-area: logo;}
-.navbar { grid-area: navbar;}
-.alcohol { grid-area: alcohol;}
-.clasicos { grid-area: clasicos;}
-.sidebar { grid-area: sidebar;}
+.logo { grid-area: logo; background-color: #8e8ea5;}
+.navbar { grid-area: navbar;  background-color: #c0c0db; height: 3vw;}
+.alcohol { grid-area: alcohol;color: #c0c0db !important;}
+.clasicas { grid-area: clasicos;color: #c0c0db !important;}
+.sidebar { grid-area: sidebar; background-color: #c0c0db;}
 .home { grid-area: home;}
 .conocer { grid-area: conocer;}
-.recetas { grid-area: recetas;}
-.receta1 { grid-area: receta1;}
-.receta2 { grid-area: receta2;}
-.receta3 { grid-area: receta3;}
-.receta4 { grid-area: receta4;}
+.recetas { grid-area: recetas; }
+.receta1 { grid-area: receta1; background-color: #c0c0db;}
+.receta2 { grid-area: receta2; background-color: #c0c0db;}
+.receta3 { grid-area: receta3; background-color: #c0c0db;}
+.receta4 { grid-area: receta4; background-color: #c0c0db;}
 .section { grid-area: section;}
+/* .recetas { grid-area: recetas;} */
+.nombre { grid-area: nombre; color:#050524}
+.recetas-img { grid-area: recetas-img;}
+.detalles { grid-area: detalles;}
+footer { grid-area: footer;}
+
+.recetas {
+    display: grid;
+    grid-template-areas:
+    'nombre'
+    'recetas-img'
+    'detalles'
+    ;
+    place-items: center;
+    /* background-color: cadetblue; */
+    gap: 1vw;
+}
 
 .grid-container {
     display: grid;
@@ -21,14 +38,19 @@
     'navbar navbar navbar navbar'
     'alcohol alcohol alcohol sidebar'
     'clasicos clasicos clasicos sidebar'
+    'footer footer footer footer'
     ;
-    background-color: cadetblue;
-    gap: 3vw;
+    /* background-color: cadetblue; */
+    gap: 1vw;
 }
 
-.grid-container > div, nav {
-    background-color: aquamarine;
+.grid-container > div {
+    /* background-color: aquamarine; */
     padding: 40px;
+}
+.grid-container > nav {
+    /* background-color: aquamarine; */
+    height: 3vw;
 }
 
 .alcohol {
@@ -37,12 +59,27 @@
     'receta1 receta2'
     'receta3 receta4'
     ;
-    background-color: cadetblue;
-    gap: 3vw;
+    /* background-color: cadetblue; */
+    gap: 1vw;
 }
 
 .alcohol > div {
-    background-color: cadetblue;
+    /* background-color: cadetblue; */
+    padding: 40px;
+}
+
+.clasicas {
+    display:grid;
+    grid-template-areas: 
+    'receta1 receta2'
+    'receta3 receta4'
+    ;
+    /* background-color: cadetblue; */
+    gap: 1vw;
+}
+
+.clasicas > div {
+    /* background-color: cadetblue; */
     padding: 40px;
 }
 
@@ -51,17 +88,23 @@
     grid-template-areas:
     'home home conocer recetas'
     ;
-    background-color:rgb(227, 220, 233);
-    gap: 3vw;
+    /* background-color:blueviolet; */
+    gap: 1vw;
 }
 
 .navbar-menu > div {
-    background-color: rgb(180, 166, 179);
-    padding: 40px;
+    /* background-color: rgb(247, 13, 227); */
+    /* padding: 40px; */
+    height: 3vw;
 }
 
 img {
-    width: 10vw;
+    width: 15vw;
+}
+
+.logo-img {
+    height: 10vw !important;
+    width: auto !important;
 }
 
 .grid-cont {
@@ -72,17 +115,18 @@ img {
     'section section section section'
     'footer footer footer footer'
     ;
-    background-color: #f3e7e7;
-    gap: 3vw;
+    background-color: #c0c0db;
+    gap: 1vw;
 }
 
 .grid-cont > div, nav {
-    background-color: #f3e7e7;
+    background-color: #c0c0db;
     padding: 40px;
 }
 
 footer {
-    background-color: #f3e7e7;
+
+    background-color: #c0c0db;
     font-size: small;
 }
 
@@ -91,7 +135,7 @@ footer {
     flex-direction: row;
     flex-flow: wrap;
     align-items: center;
-    background: #e2e2e2;
+    background: #c0c0db;
     padding: 35px;
     border-radius: 10px;
     font-family: 'Poppins', sans-serif;
@@ -100,9 +144,36 @@ footer {
 .form-group{
     padding: 10px 15px;
 }
+a:link,a:visited,a:hover,a:active {
+    text-decoration: none;
+}
+.special-link:hover,.special-link:active{
+    background-color: #050524;
+    color: #c0c0db;
+    padding: 14px 25px;
+    text-align: center;
+    display: inline-block;
+}
+
+.special-link:link {
+    background-color: #050524;
+    color: #c0c0db;
+    padding: 14px 25px;
+    text-align: center;
+    display: inline-block;
+}
+
+.special-link:visited {
+    background-color: #050524;
+    color: #c0c0db;
+    padding: 14px 25px;
+    text-align: center;
+    display: inline-block;
+}
 
 body {
     font-family: 'Poppins', sans-serif;
+    background-color: #050524;
 }
 
 /*

@@ -4,35 +4,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recetas - Brindis</title>
+    
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
+
+    <!--Usar una fuente externa de Google Fonts (https://fonts.google.com) -->
+    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&display=swap" rel="stylesheet" />
+
+    <!-- La hoja de estilos que se va a usar (la más relevante) -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstra -->
+    <!-- p.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83 -->
+    <!-- DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
     <div class="grid-container">
-        <div class="logo"> logo</div>
-        <div class="navbar">
-           <div class="navbar-menu"> <div class="homehome">Home</div><div class="conocer">Conócenos</div><div class="recetas">Recetas</div></div>
+        <div class="logo">
+            <a href="../index.html" class="logo-link"><img class="logo-img" src="../img/logo.png"></a>
         </div>
-    <div class="alcohol">
-        <p class="texto">Recetas sin alcohol</p>
-        <div class="receta1"><p>Cóctel Shirley Temple</p><img src="../img/shirley-temple.jpg">
-            <p>Ingredientes: Para 1.5 unidades:</p>
-            <ul>
-                <li>Refresco de lima-limón 1 l</li>
-                <li>Cerezas en conserva 150 g</li>
-                <li>Naranja 1</li>
-                <li>Granadina al gusto</li>
-            </ul>
+        <nav class="navbar">
+            <div class="navbar-menu">
+                <div class="homehome">
+                    <a href="../index.html" class="link">
+                        Home
+                    </a>
+                </div>
+                <div class="conocer">
+                    <a href="./historia.html" class="link">
+                        Historia
+                    </a>
+                </div>
+                <div class="recetas">
+                    <a href="./recetas.html" class="link">
+                        Recetas
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <div class="alcohol" id="sin-alcohol">
+            <p class="texto">Recetas sin alcohol</p>
+            <div class="receta1 recetas">
+                <p class="nombre">Cóctel Shirley Temple</p>
+                <img class="receta-img" src="../img/shirley-temple.jpg">
+                <a class="detalles special-link" href="./recepies/sin-alcohol.html#shirley-temple">Más detalles</a>
+            </div>
+            <div class="receta3 recetas">
+                <p class="nombre">Té verde helado al estilo moruno</p>
+                <img class="receta-img" src="../img/te-moruno.jpg">
+                <a class="detalles special-link" href="./recepies/sin-alcohol.html#te-moruno">Más detalles</a>
+            </div>
+            <div class="receta2 recetas">
+                <p class="nombre">San Francisco</p>
+                <img class="receta-img" src="../img/cocktail-san-francisco.jpg">
+                <a class="detalles special-link" href="./recepies/sin-alcohol.html#san-francisco">Más detalles</a>
+            </div>
+            <div class="receta4 recetas">
+                <p class="nombre">Smoothie de piña, mango y agua de coco</p>
+                <img class="receta-img" src="../img/smoothie-pina-mango.jpg">
+                <a class="detalles special-link" href="./recepies/sin-alcohol.html#smoothie-pina-mango">Más detalles</a>
+            </div>
         </div>
-        <div class="receta3"><p>Té verde helado al estilo moruno</p><img src="../img/te-moruno.jpg">
-            <p>Ingredientes:</p>
+        <div class="clasicas" id="clasicas">
+            <p class="texto">Recetas clasicas</p>
+            <div class="receta1 recetas">
+                <p class="nombre">Cóctel Shirley Temple</p>
+                <img class="receta-img" src="../img/shirley-temple.jpg">
+                <a class="detalles special-link" href="./recepies/sin-alcohol.html#shirley-temple">Más detalles</a>
+            </div>
+            <div class="receta3 recetas">
+                <p class="nombre">Té verde helado al estilo moruno</p>
+                <img class="receta-img" src="../img/te-moruno.jpg">
+                <a class="detalles special-link" href="./recepies/sin-alcohol.html#te-moruno">Más detalles</a>
+            </div>
+            <div class="receta2 recetas">
+                <p class="nombre">San Francisco</p>
+                <img class="receta-img" src="../img/cocktail-san-francisco.jpg">
+                <a class="detalles special-link" href="./recepies/sin-alcohol.html#san-francisco">Más detalles</a>
+            </div>
+            <div class="receta4 recetas">
+                <p class="nombre">Smoothie de piña, mango y agua de coco</p>
+                <img class="receta-img" src="../img/smoothie-pina-mango.jpg">
+                <a class="detalles special-link" href="./recepies/sin-alcohol.html#smoothie-pina-mango">Más detalles</a>
+            </div>
+        </div>
+        <div class="sidebar">
             <ul>
-                <li>Té verde</li>
-                <li>Azúcar moreno</li>
-                <li>Unas ramas de hierbabuena</li>
+                <li><a href="#sin-alcohol">Recetas Sin Alcohol</a></li>
+                <li><a href="#clasicas">Recetas Con Alcohol</a></li>
             </ul>
-        </div><div class="receta2">Cóctel Shirley Temple</div><div class="receta4">Té verde helado al estilo moruno</div></div>
-        <div class="clasicos"><p class="texto">Recetas clasicas</p><div class="receta1">1</div><div class="receta3">3</div><div class="receta2">2</div><div class="receta4">4</div></div>
-        <div class="sidebar"> alguito </div>
+            <!-- <a href="#destacadas">mejor no</a>  -->
+        </div>
     </div>
     
     <footer>
