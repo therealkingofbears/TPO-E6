@@ -184,6 +184,12 @@ body {
     align-self: center;
 }
 
+#resultado {
+    font-family: 'Poppins', sans-serif;
+    color: #8e8ea5;
+    background-color: #1d1d55;
+}
+
 /*
 Selector de id
 

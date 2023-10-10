@@ -41,3 +41,47 @@ document.addEventListener('DOMContentLoaded', function () {
     formRegistro.submit();
   });
 });
+
+//API TheCocktailDB
+
+document.getElementById('buscarCocktail').addEventListener('click', function () {
+  // Obtener el valor del campo de búsqueda
+  const searchTerm = document.getElementById('cocktailSearch').value;
+
+  // URL de la API con el término de búsqueda
+  const apiUrl = `https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${searchTerm}`;
+
+  // Realizar la solicitud a la API utilizando fetch
+  fetch(apiUrl)
+      .then(response => response.json())
+      .then(data => {
+          // Manipular los datos de la API aquí
+          mostrarResultado(data);
+      })
+      .catch(error => {
+          console.error('Error al obtener los datos:', error);
+      });
+});
+
+//Función para mostrar los resultados en la página web
+function mostrarResultado(data) {
+  const resultadoDiv = document.getElementById('resultado');
+  resultadoDiv.innerHTML = ''; // Limpia contenido anterior
+
+  if (data.drinks) {
+      // forEach para iterar a través de los cócteles encontrados
+      data.drinks.forEach(cocktail => {
+          const nombre = cocktail.strDrink;
+          const instrucciones = cocktail.strInstructions;
+
+          // Crea elementos HTML para mostrar la información
+          const cocktailDiv = document.createElement('div');
+          cocktailDiv.innerHTML = `<h2>${nombre}</h2><p>${instrucciones}</p>`;
+
+          // Agrega el elemento al resultado
+          resultadoDiv.appendChild(cocktailDiv);
+      });
+  } else {
+      resultadoDiv.innerHTML = '<p>No se encontraron cócteles.</p>';
+  }
+}
