@@ -27,6 +27,11 @@ document.addEventListener('DOMContentLoaded', function () {
       return;
     }
 
+    if (isNaN(telefono) || telefono.length !== 10) {
+      alert('Por favor, ingresa un número de teléfono válido.');
+      return;
+    }
+
     if (clave.length < 8) {
       alert('La contraseña debe tener al menos 8 caracteres.');
       return;
