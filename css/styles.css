@@ -51,7 +51,7 @@ footer { grid-area: footer;}
 }
 .grid-container > nav {
     /* background-color: aquamarine; */
-    height: 3vw;
+    height: 1vw;
 }
 
 .alcohol {
@@ -87,8 +87,7 @@ footer { grid-area: footer;}
 .navbar-menu {
     display: grid;
     grid-template-areas:
-    'home contacto conocer recetas'
-    ;
+    'home contacto conocer recetas';
     /* background-color:blueviolet; */
     gap: 1vw;
 }
