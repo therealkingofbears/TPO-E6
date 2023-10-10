@@ -187,7 +187,16 @@ body {
 #resultado {
     font-family: 'Poppins', sans-serif;
     color: #8e8ea5;
+}
+
+.buscador {
+    color: #8e8ea5;
+}
+
+.api {
     background-color: #1d1d55;
+    font-family: 'Poppins', sans-serif;
+    color: #8e8ea5;
 }
 
 /*
