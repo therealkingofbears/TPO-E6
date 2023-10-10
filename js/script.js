@@ -63,22 +63,22 @@ document.getElementById('buscarCocktail').addEventListener('click', function () 
       });
 });
 
+//Función para mostrar los resultados en la página web
 function mostrarResultado(data) {
-  // Mostrar los datos en la página web
   const resultadoDiv = document.getElementById('resultado');
-  resultadoDiv.innerHTML = ''; // Limpiar contenido anterior
+  resultadoDiv.innerHTML = ''; // Limpia contenido anterior
 
   if (data.drinks) {
-      // Iterar a través de los cócteles encontrados
+      // forEach para iterar a través de los cócteles encontrados
       data.drinks.forEach(cocktail => {
           const nombre = cocktail.strDrink;
           const instrucciones = cocktail.strInstructions;
 
-          // Crear elementos HTML para mostrar la información
+          // Crea elementos HTML para mostrar la información
           const cocktailDiv = document.createElement('div');
           cocktailDiv.innerHTML = `<h2>${nombre}</h2><p>${instrucciones}</p>`;
 
-          // Agregar el elemento al resultado
+          // Agrega el elemento al resultado
           resultadoDiv.appendChild(cocktailDiv);
       });
   } else {
