@@ -115,19 +115,21 @@ img {
     'section section section section'
     'footer footer footer footer'
     ;
-    background-color: #c0c0db;
+    background-color: #050524;
     gap: 1vw;
+    color: #8e8ea5;
 }
 
 .grid-cont > div, nav {
-    background-color: #c0c0db;
+    /*background-color: #c0c0db;*/
     padding: 40px;
 }
 
 footer {
 
-    background-color: #c0c0db;
+    /*background-color: #c0c0db;*/
     font-size: small;
+    color: #8e8ea5;
 }
 
 #form-registro{
@@ -135,10 +137,11 @@ footer {
     flex-direction: row;
     flex-flow: wrap;
     align-items: center;
-    background: #c0c0db;
+    background: #1d1d55;
     padding: 35px;
     border-radius: 10px;
     font-family: 'Poppins', sans-serif;
+    color: #8e8ea5;
 }
 
 .form-group{
