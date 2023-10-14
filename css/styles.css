@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Montserrat:wght@200&family=Poppins&display=swap');
 
 .logo { grid-area: logo; background-color: #8e8ea5;}
-.navbar { grid-area: navbar;  background-color: #c0c0db; height: 3vw;}
+.navbar { grid-area: navbar;  background-color: #c0c0db;}
 .alcohol { grid-area: alcohol;color: #c0c0db !important;}
 .clasicas { grid-area: clasicos;color: #c0c0db !important;}
 .sidebar { grid-area: sidebar; background-color: #c0c0db;}
@@ -32,18 +32,58 @@ footer { grid-area: footer;}
     gap: 1vw;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-areas:
-    'logo logo logo logo'
-    'navbar navbar navbar navbar'
-    'alcohol alcohol alcohol sidebar'
-    'clasicos clasicos clasicos sidebar'
-    'footer footer footer footer'
-    ;
-    /* background-color: cadetblue; */
-    gap: 1vw;
+@media only screen and (max-width: 300px)
+{
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+        'logo logo logo logo'
+        'navbar navbar navbar navbar'
+        'navbar navbar navbar navbar'
+        'alcohol alcohol alcohol alcohol'
+        'clasicos clasicos clasicos clasicos'
+        'sidebar sidebar sidebar sidebar'
+        'footer footer footer footer'
+        ;
+        /* background-color: cadetblue; */
+        gap: 1vw;
+    }
 }
+
+@media only screen and (min-width: 728px)
+{
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+        'logo logo logo logo'
+        'navbar navbar navbar navbar'
+        'alcohol alcohol alcohol sidebar'
+        'clasicos clasicos clasicos sidebar'
+        'footer footer footer footer'
+        ;
+        /* background-color: cadetblue; */
+        gap: 1vw;
+    }
+}
+
+@media only screen and (max-width: 727px)
+{
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+        'logo logo logo logo'
+        'navbar navbar navbar navbar'
+        'sidebar sidebar sidebar sidebar'
+        'alcohol alcohol alcohol alcohol'
+        'clasicos clasicos clasicos clasicos'
+        'footer footer footer footer'
+        ;
+        /* background-color: cadetblue; */
+        gap: 1vw;
+    }
+}
+
+
 
 .grid-container > div {
     /* background-color: aquamarine; */
@@ -53,50 +93,104 @@ footer { grid-area: footer;}
     /* background-color: aquamarine; */
     height: 1vw;
 }
-
-.alcohol {
-    display:grid;
-    grid-template-areas: 
-    'receta1 receta2'
-    'receta3 receta4'
-    ;
-    /* background-color: cadetblue; */
-    gap: 1vw;
+@media only screen and (min-width: 728px)
+{
+    .alcohol {
+        display:grid;
+        grid-template-areas: 
+        'receta1 receta2'
+        'receta3 receta4'
+        ;
+        /* background-color: cadetblue; */
+        gap: 1vw;
+    }
 }
 
+@media only screen and (max-width: 727px)
+{
+    .alcohol {
+        display:grid;
+        grid-template-areas: 
+        'receta1'
+        'receta2'
+        'receta3'
+        'receta4'
+        ;
+        /* background-color: cadetblue; */
+        gap: 1vw;
+    }
+}
 .alcohol > div {
     /* background-color: cadetblue; */
     padding: 40px;
 }
 
-.clasicas {
-    display:grid;
-    grid-template-areas: 
-    'receta1 receta2'
-    'receta3 receta4'
-    ;
-    /* background-color: cadetblue; */
-    gap: 1vw;
+@media only screen and (min-width: 728px)
+{
+    .clasicas {
+        display:grid;
+        grid-template-areas: 
+        'receta1 receta2'
+        'receta3 receta4'
+        ;
+        /* background-color: cadetblue; */
+        gap: 1vw;
+    }
+}
+
+@media only screen and (max-width: 727px)
+{
+    .clasicas {
+        display:grid;
+        grid-template-areas: 
+        'receta1'
+        'receta2'
+        'receta3'
+        'receta4'
+        ;
+        /* background-color: cadetblue; */
+        gap: 1vw;
+    }
 }
 
 .clasicas > div {
     /* background-color: cadetblue; */
     padding: 40px;
 }
-
-.navbar-menu {
+@media only screen and (min-width: 351px)
+{
+.navbar {
     display: grid;
     grid-template-areas:
     'home contacto conocer recetas';
     /* background-color:blueviolet; */
+    place-items: center;
     gap: 1vw;
 }
-
-.navbar-menu > div {
+.navbar > div {
     /* background-color: rgb(247, 13, 227); */
     /* padding: 40px; */
     height: 3vw;
 }
+}
+@media only screen and (max-width: 350px)
+{
+.navbar {
+    display: grid;
+    grid-template-areas:
+    'home contacto'
+    'conocer recetas';
+    /* background-color:blueviolet; */
+    place-items: center;
+    gap: 1vw 2vw 1vw 2vw;
+}
+.navbar > div {
+    /* background-color: rgb(247, 13, 227); */
+    /* padding: 40px; */
+    height: 4vw;
+}
+}
+
 
 img {
     width: 15vw;
