@@ -6,6 +6,7 @@
 .clasicas { grid-area: clasicos;color: #c0c0db !important;}
 .sidebar { grid-area: sidebar; background-color: #c0c0db;}
 .home { grid-area: home;}
+.texto { grid-area: texto;}
 .conocer { grid-area: conocer;}
 .contacto { grid-area: contacto;}
 .recetas { grid-area: recetas; }
@@ -40,9 +41,9 @@ footer { grid-area: footer;}
         'logo logo logo logo'
         'navbar navbar navbar navbar'
         'navbar navbar navbar navbar'
+        'sidebar sidebar sidebar sidebar'
         'alcohol alcohol alcohol alcohol'
         'clasicos clasicos clasicos clasicos'
-        'sidebar sidebar sidebar sidebar'
         'footer footer footer footer'
         ;
         /* background-color: cadetblue; */
@@ -59,7 +60,7 @@ footer { grid-area: footer;}
         'navbar navbar navbar navbar'
         'alcohol alcohol alcohol sidebar'
         'clasicos clasicos clasicos sidebar'
-        'footer footer footer footer'
+        'footer footer footer sidebar'
         ;
         /* background-color: cadetblue; */
         gap: 1vw;
@@ -98,6 +99,7 @@ footer { grid-area: footer;}
     .alcohol {
         display:grid;
         grid-template-areas: 
+        'texto texto'
         'receta1 receta2'
         'receta3 receta4'
         ;
@@ -111,6 +113,7 @@ footer { grid-area: footer;}
     .alcohol {
         display:grid;
         grid-template-areas: 
+        'texto'
         'receta1'
         'receta2'
         'receta3'
@@ -130,6 +133,7 @@ footer { grid-area: footer;}
     .clasicas {
         display:grid;
         grid-template-areas: 
+        'texto texto'
         'receta1 receta2'
         'receta3 receta4'
         ;
@@ -143,6 +147,7 @@ footer { grid-area: footer;}
     .clasicas {
         display:grid;
         grid-template-areas: 
+        'texto'
         'receta1'
         'receta2'
         'receta3'
@@ -291,6 +296,10 @@ body {
     /*background-color: #1d1d55;*/
     font-family: 'Poppins', sans-serif;
     color: #8e8ea5;
+}
+
+.texto-negro {
+    color:  #050524;
 }
 
 /*
