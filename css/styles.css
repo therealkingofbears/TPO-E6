@@ -293,6 +293,40 @@ body {
     color: #8e8ea5;
 }
 
+
+
+/* Aca estoy agregando las imagenes y un video del index
+
+  */
+  .imagen-container {
+    width: 100%;
+    float: right; 
+}
+
+.imagen-container img {
+    width: 100%; 
+    display: block;
+    margin-bottom: 100px; 
+    font-family: 'Poppins', sans-serif;
+}
+.imagen-container img:first-child {
+    margin-top: 60px; 
+}
+
+.imagen-pequena img {
+    width: 100%;
+    Justify-content: center; 
+    align-items: center; 
+}
+
+.pie {
+    color: #8e8ea5;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
 /*
 Selector de id
 
