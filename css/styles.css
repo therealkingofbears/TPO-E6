@@ -97,7 +97,7 @@ footer { grid-area: footer;}
     /* padding: 40px; */
     height: 3vw;
 }
-
+/* aca movi algo y no se si esto estaba así, trate de arregla* Maribel*/
 img {
     width: 15vw;
 }
@@ -218,13 +218,82 @@ body {
 .imagen-container img:first-child {
     margin-top: 60px; 
 }
-
+/*
 .imagen-pequena img {
     width: 100%;
     Justify-content: center; 
     align-items: center; 
 }
 
+*/
+
+/* Estoy agregando animacion en el home a la imagen mas pequeña */
+
+@keyframes desplazar {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(200px); 
+    }
+    100% {
+        transform: translateX(0); 
+    }
+}
+
+
+/* Esta es la imagen al comienzo del home */
+.imagen-centrada  {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.imagen-pequena {
+    width: 200px; 
+    animation: desplazar 4s linear infinite; 
+}
+
+@keyframes desplazar-estrellas {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(200px); 
+    }
+    100% {
+        transform: translateX(0); 
+    }
+}
+
+/*
+Estuve intentando locar alguna estela de estrella a la imagen pero no he podido
+
+.imagen-pequena::before {
+    content: "★ ★ ★ ★ ★"; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 80px;
+    opacity: 0.9
+    color: white;
+    animation: desplazar-estrellas 4s linear infinite; 
+
+}
+
+
+@keyframes desplazar-estrellas {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(200px); 
+    }
+    100% {
+        transform: translateX(0); 
+    }
+}
+*/
 .pie {
     color: #8e8ea5;
     align-items: center;
