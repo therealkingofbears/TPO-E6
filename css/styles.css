@@ -379,6 +379,11 @@ body {
     margin: 0 auto;
 }
 
+.img-form {
+    display: flex;
+    margin: 0 auto;
+}
+
 /*
 Selector de id
 
