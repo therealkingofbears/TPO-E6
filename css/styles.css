@@ -292,6 +292,10 @@ body {
     color: #8e8ea5;
 }
 
+.historia {
+    color: #8e8ea5;
+}
+
 .api {
     /*background-color: #1d1d55;*/
     font-family: 'Poppins', sans-serif;
@@ -368,6 +372,11 @@ body {
     100% {
         transform: translateX(0); 
     }
+}
+
+.iframe {
+    display: flex;
+    margin: 0 auto;
 }
 
 /*
