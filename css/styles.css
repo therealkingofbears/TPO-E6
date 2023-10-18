@@ -384,6 +384,11 @@ body {
     margin: 0 auto;
 }
 
+.hist-side {
+    font-family: 'Poppins', sans-serif;
+    color: #8e8ea5;
+}
+
 /*
 Selector de id
 
