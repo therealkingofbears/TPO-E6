@@ -55,7 +55,6 @@ document.getElementById('buscarCocktail').addEventListener('click', function () 
   fetch(apiUrl)
       .then(response => response.json())
       .then(data => {
-          // Manipular los datos de la API aquí
           mostrarResultado(data);
       })
       .catch(error => {
@@ -63,13 +62,11 @@ document.getElementById('buscarCocktail').addEventListener('click', function () 
       });
 });
 
-//Función para mostrar los resultados en la página web
 function mostrarResultado(data) {
   const resultadoDiv = document.getElementById('resultado');
   resultadoDiv.innerHTML = ''; // Limpia contenido anterior
 
   if (data.drinks) {
-      // forEach para iterar a través de los cócteles encontrados
       data.drinks.forEach(cocktail => {
           const nombre = cocktail.strDrink;
           const instrucciones = cocktail.strInstructions;
