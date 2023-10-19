@@ -4,10 +4,8 @@ document.addEventListener('DOMContentLoaded', function () {
   const formRegistro = document.getElementById('form-registro');
   formRegistro.addEventListener('submit', function (event) {
 
-    // Evita que el formulario se envíe automáticamente
     event.preventDefault();
 
-    // Los campos se validan acá
     const nombre = document.getElementById('nombre').value.trim();
     const correo = document.getElementById('correo').value.trim();
     const telefono = document.getElementById('telefono').value.trim();
@@ -16,7 +14,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const fechaNac = document.getElementById('fecha-nac').value;
     const clave = document.getElementById('clave').value;
 
-    //Requisitos de validación
     if (nombre === '') {
       alert('Por favor, ingresa tu nombre y apellido.');
       return;
@@ -37,7 +34,6 @@ document.addEventListener('DOMContentLoaded', function () {
       return;
     }
 
-    // Si todas las validaciones pasan, se envía el formulario
     formRegistro.submit();
   });
 });
@@ -45,13 +41,10 @@ document.addEventListener('DOMContentLoaded', function () {
 //API TheCocktailDB
 
 document.getElementById('buscarCocktail').addEventListener('click', function () {
-  // Obtener el valor del campo de búsqueda
   const searchTerm = document.getElementById('cocktailSearch').value;
 
-  // URL de la API con el término de búsqueda
   const apiUrl = `https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${searchTerm}`;
 
-  // Realizar la solicitud a la API utilizando fetch
   fetch(apiUrl)
       .then(response => response.json())
       .then(data => {
@@ -64,21 +57,47 @@ document.getElementById('buscarCocktail').addEventListener('click', function () 
 
 function mostrarResultado(data) {
   const resultadoDiv = document.getElementById('resultado');
-  resultadoDiv.innerHTML = ''; // Limpia contenido anterior
+  resultadoDiv.innerHTML = '';
 
   if (data.drinks) {
       data.drinks.forEach(cocktail => {
           const nombre = cocktail.strDrink;
           const instrucciones = cocktail.strInstructions;
 
-          // Crea elementos HTML para mostrar la información
           const cocktailDiv = document.createElement('div');
           cocktailDiv.innerHTML = `<h2>${nombre}</h2><p>${instrucciones}</p>`;
 
-          // Agrega el elemento al resultado
           resultadoDiv.appendChild(cocktailDiv);
       });
   } else {
       resultadoDiv.innerHTML = '<p>No se encontraron cócteles.</p>';
   }
 }
+
+//Guardar datos del formulario:
+
+document.getElementById("form-registro").addEventListener("submit", function (event) {
+  event.preventDefault();
+
+  let nombre = document.getElementById("nombre").value;
+  let correo = document.getElementById("correo").value;
+  let telefono = document.getElementById("telefono").value;
+  let genero = document.getElementById("genero").value;
+  let imagen = document.getElementById("imagen").value;
+  let fechaNac = document.getElementById("fecha-nac").value;
+  let contrasena = document.getElementById("clave").value;
+
+  let datosUsuario = {
+      nombre: nombre,
+      correo: correo,
+      telefono: telefono,
+      genero: genero,
+      imagen: imagen,
+      fechaNac: fechaNac,
+      contrasena: contrasena
+  };
+
+  console.log(datosUsuario);
+
+  document.getElementById("form-registro").reset();
+});
